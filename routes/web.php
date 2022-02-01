@@ -13,7 +13,15 @@
 |
 */
 
-$router->get('/members', function () use ($router) {
-    $members = App\Models\Member::all();
-    return response()->json(['error' => false, 'data' => $members]);
-});
+Route::get('membersDisplay', 'MembersController@membersList');
+
+Route::get('members', 'MembersController@membersList');
+
+// $router->get('/members', function () use ($router) {
+//     $members = App\Models\Member::all()->toArray();
+//     foreach($members as $member){
+
+//     }
+//     return response()->json(['error' => false, 'data' => $members]);
+// });
+

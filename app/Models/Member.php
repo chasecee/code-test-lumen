@@ -10,4 +10,5 @@ class Member extends Model
     {
         return $this->belongsTo('App\Models\Subscription');
     }
+
 }
