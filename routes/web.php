@@ -13,8 +13,6 @@
 |
 */
 
-Route::get('membersDisplay', 'MembersController@membersList');
-
 Route::get('members', 'MembersController@membersList');
 
 // $router->get('/members', function () use ($router) {
